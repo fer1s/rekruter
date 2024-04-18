@@ -1,0 +1,114 @@
+.users .users_table {
+   overflow: hidden;
+   border-radius: 8px;
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   width: 100%;
+}
+
+.users .users_table table {
+   height: 100%;
+   width: 100%;
+   table-layout: fixed;
+   border-collapse: collapse;
+   border-spacing: 1px;
+   text-align: left;
+}
+
+.users .users_table th {
+   background-color: rgba(0, 0, 0, 0.08);
+   color: #000000;
+   font-weight: 700;
+   padding: 10px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+   border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.users .users_table th:last-child {
+   border-right: none;
+}
+
+.users .users_table td {
+   background-color: rgba(0, 0, 0, 0.05);
+   color: #353535;
+   font-weight: 300;
+   padding: 10px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+   border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.users .users_table tr:last-child td {
+   border-bottom: none;
+}
+
+.users .users_table td:last-child {
+   border-right: none;
+}
+
+.content form {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 3rem;
+}
+
+.content form > div {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-start;
+   gap: 1rem;
+}
+
+.content form .input_group {
+   display: flex;
+   flex-direction: column;
+   gap: 0.3rem;
+}
+
+.content form .input_group p {
+   font-size: 0.8rem;
+}
+
+.content form .input_group > input {
+   padding: 0.5rem;
+   border-radius: 5px;
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   width: 100%;
+   outline: none;
+}
+
+.content form .input_group .radios {
+   display: flex;
+   gap: 1rem;
+}
+
+.content form .input_group .radios > div {
+   display: flex;
+   gap: 0.5rem;
+   align-items: center;
+}
+
+.content form .input_group .radios > div label {
+   font-size: 0.8rem;
+}
+
+.content form .input_group .radios > div input {
+   width: 1rem;
+   height: 1rem;
+}
+
+.content form > input[type='submit'] {
+   padding: 0.5rem 1rem;
+   border-radius: 5px;
+   border: none;
+   background-color: #333;
+   color: #ffffff;
+   font-weight: 700;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.content form > input[type='submit']:hover {
+   background-color: #000000;
+}

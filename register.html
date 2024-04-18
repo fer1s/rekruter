@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekruter - Rejestracja</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/pages/auth.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="content auth_page">
+        <h1><a href="index.php"><i class='bx bx-left-arrow-alt'></i></a>Rejestracja</h1>
+
+        <form action="process_register.php" method="post">
+            <div class="input_holder">
+                <p>Imię i nazwisko</p>
+                <input type="text" placeholder="Jan Kowalski" name="username" id="username" required>
+            </div>
+            <div class="input_holder">
+                <p>Email</p>
+                <input type="email" placeholder="jan.kowalski@example.com" name="email" id="email" required>
+            </div>
+            <div class="input_holder">
+                <p>Hasło</p>
+                <input type="password" placeholder="Hasło" name="password" id="password" required>
+            </div>
+            <div class="input_holder">
+                <p>Powtórz hasło</p>
+                <input type="password" placeholder="Powtórz hasło" name="password_repeat" id="password_repeat" required>
+            </div>
+
+            <div class="button">
+                <input type="submit" value="Zarejestruj">
+                <p>Masz już konto? <a href="login.php">Zaloguj się</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div class="badge">
+        <h5>Stworzone przez <span>Jakub Molenda 3bTP</span></h5>
+    </div>
+</body>
+
+</html>

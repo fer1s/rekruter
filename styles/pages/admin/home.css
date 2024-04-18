@@ -1,0 +1,72 @@
+.projects .projects_list {
+   position: relative;
+
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+   overflow: hidden;
+   gap: 1rem;
+
+   min-height: 200px;
+   width: 100%;
+}
+
+.projects .projects_list .project {
+   position: relative;
+
+   width: calc(calc(calc(100% - 2rem) / 3));
+   height: 200px;
+   background-color: rgba(0, 0, 0, 0.01);
+   border: 2px dashed rgba(0, 0, 0, 0.15);
+   border-radius: 10px;
+   backdrop-filter: blur(2px);
+
+   padding: 1rem;
+
+   overflow: hidden;
+}
+
+.projects .projects_list .project h4 {
+   font-size: 1.5rem;
+   font-weight: 700;
+   margin-bottom: 1rem;
+   color: #333;
+}
+
+.projects .projects_list .project p {
+   font-size: 1rem;
+   font-weight: 400;
+   color: #333;
+}
+
+.projects .projects_list .project .project_buttons {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   margin: 1rem;
+
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   gap: 0.5rem;
+}
+
+.projects .projects_list .project .project_buttons a {
+   padding: 0.5rem 1rem;
+
+   background-color: #333;
+   color: #fff;
+   border-radius: 5px;
+   border: 2px solid rgba(255, 255, 255, 0.15);
+
+   font-size: 0.8rem;
+   font-weight: 500;
+
+   transition: all 0.3s ease;
+}
+
+.projects .projects_list .project .project_buttons a:hover {
+   background-color: #000;
+   border: 2px solid rgba(255, 255, 255, 0.15);
+}

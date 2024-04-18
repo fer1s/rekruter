@@ -1,0 +1,59 @@
+.recruitment_details {
+   width: 100%;
+}
+
+.recruitment_details .title {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+.recruitment_details .title h2 {
+   font-size: 2rem;
+   font-weight: 600;
+   color: #333;
+}
+
+.recruitment_details .title h2 span {
+   font-size: 0.8rem;
+   font-weight: 300;
+   color: #333;
+}
+
+.recruitment_details .title .entries {
+   padding: 0.5rem 1rem;
+   background-color: rgba(0, 0, 0, 0.15);
+   color: #fff;
+   border-radius: 5px;
+   border: 1px solid rgba(0, 0, 0, 0.15);
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0.5rem;
+   flex-direction: column;
+}
+
+.recruitment_details .title .entries h5 {
+   font-size: 0.8rem;
+   font-weight: 400;
+   color: #1f1f1f;
+   position: relative;
+}
+
+.recruitment_details .title .entries p {
+   font-size: 1rem;
+   font-weight: 500;
+   color: #000000;
+}
+
+.recruitment_details .description {
+   width: 100%;
+   padding: 20px;
+   background-color: rgba(255, 255, 255, 0.1);
+   backdrop-filter: blur(2px);
+   border-radius: 8px;
+   border: 1px solid rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,49 @@
+form {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+
+form .input_group p {
+   font-size: 0.8rem;
+   font-weight: 400;
+   margin-bottom: 0.2rem;
+}
+
+form .input_group input,
+form .input_group textarea {
+   width: 100%;
+
+   padding: 0.8rem 1rem;
+   border-radius: 0.5rem;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   background-color: rgba(0, 0, 0, 0.02);
+   backdrop-filter: blur(5px);
+   outline: none;
+
+   transition: all 0.3s ease;
+
+   box-shadow: 0.5px 0.6px 2.2px rgba(0, 0, 0, 0.02), 1.1px 1.4px 5.3px rgba(0, 0, 0, 0.028), 2.1px 2.6px 10px rgba(0, 0, 0, 0.035), 3.8px 4.7px 17.9px rgba(0, 0, 0, 0.042),
+      7.1px 8.8px 33.4px rgba(0, 0, 0, 0.05), 17px 21px 80px rgba(0, 0, 0, 0.07);
+}
+
+form .input_group textarea {
+   min-height: 150px;
+   max-height: 150px;
+   min-width: 100%;
+   max-width: 100%;
+   resize: none;
+}
+
+form input[type='submit'] {
+   width: 100%;
+   padding: 0.8rem 1rem;
+   border-radius: 0.5rem;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   background-color: #333;
+   color: #fff;
+   font-weight: 500;
+   cursor: pointer;
+   outline: none;
+}

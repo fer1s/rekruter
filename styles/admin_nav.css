@@ -1,0 +1,27 @@
+.content .buttons {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   gap: 1.5rem;
+}
+
+.content .buttons a {
+   font-size: 1rem;
+   font-weight: 400;
+   color: #333;
+   text-decoration: none;
+   padding: 0.5rem 1rem;
+   border-radius: 0.5rem;
+   transition: all 0.3s ease;
+   border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.content .buttons a:hover {
+   background-color: rgba(0, 0, 0, 0.05);
+}
+
+.content .buttons a.active {
+   background-color: #333;
+   color: #fff;
+   border: 1px solid rgba(255, 255, 255, 0.15);
+}

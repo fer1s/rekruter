@@ -10,7 +10,7 @@
    -  [x] Wyświetlanie projektów
    -  [x] Przyciski w pasku nawigacji zależne od stanu zalogowania
 
--  [] Podstrona ze wszystkimi projektami
+-  [x] Podstrona ze wszystkimi projektami
 
 -  [x] Podstrona ze szczegółami projektu
 

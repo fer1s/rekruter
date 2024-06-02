@@ -23,7 +23,7 @@ $three_latest_query = "SELECT r.*, COUNT(e.id) AS entries_count
                      GROUP BY r.id
                      HAVING entries_count < r.entries_limit
                      ORDER BY r.creation_date DESC
-                     LIMIT 9;";
+                     LIMIT 3;";
 $three_latest = mysqli_query($mysqli, $three_latest_query);
 $three_latest_result = $three_latest->fetch_all(MYSQLI_ASSOC);
 

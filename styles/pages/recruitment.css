@@ -57,3 +57,36 @@
    border-radius: 8px;
    border: 1px solid rgba(0, 0, 0, 0.15);
 }
+
+.recruitment_details .actions {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   margin-top: 20px;
+
+   gap: 20px;
+}
+
+.recruitment_details .actions .button {
+   padding: 0.5rem 1rem;
+   background-color: #333;
+   color: #fff;
+   border-radius: 5px;
+   border: 2px solid rgba(255, 255, 255, 0.15);
+
+   font-size: 1rem;
+   font-weight: 500;
+
+   transition: all 0.3s ease;
+
+   text-align: center;
+
+   width: 100%;
+}
+
+.recruitment_details .actions .button:hover {
+   background-color: #181818;
+   border: 2px solid rgba(255, 255, 255, 0.15);
+}

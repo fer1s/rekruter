@@ -1,0 +1,69 @@
+.recruitment_details {
+   width: 100%;
+}
+
+.recruitment_details .title {
+   width: 100%;
+   margin-bottom: 20px;
+}
+
+.recruitment_details .title h2 {
+   font-size: 2rem;
+   font-weight: 600;
+   color: #333;
+}
+
+.recruitment_details .details p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.recruitment_details form {
+   width: 100%;
+   margin-top: 20px;
+
+   background-color: rgba(255, 255, 255, 0.1);
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(2px);
+   border: 1px solid rgba(0, 0, 0, 0.1);
+
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+}
+
+.recruitment_details form p {
+   font-size: 1rem;
+   font-weight: 400;
+
+   margin: 15px 0;
+}
+
+.recruitment_details form p:first-child {
+   margin-top: 0;
+}
+
+.recruitment_details form p:last-child {
+   margin-bottom: 0;
+}
+
+/* .recruitment_details form hr {
+   width: 100%;
+   margin: 20px 0;
+   border: none;
+   border-top: 2px dashed rgba(0, 0, 0, 0.15);
+} */
+
+.recruitment_details form input {
+   background-color: transparent;
+   outline: none;
+   border: none;
+   border-bottom: 1px dashed #333;
+   color: #333;
+   font-size: 0.9rem;
+   font-weight: 500;
+   padding: 1px 2px;
+}

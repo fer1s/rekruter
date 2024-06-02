@@ -10,6 +10,7 @@ if (!isset($_GET["id"]) || $_GET["id"] === "") {
 
 $recruitment_id = $_GET["id"];
 $logged_in = false;
+$is_admin = false;
 
 // Pobierz dane użytkownika jeśli zalogowany
 if (isset($_SESSION["user_id"])) {
@@ -23,6 +24,10 @@ if (isset($_SESSION["user_id"])) {
 
     if (isset($user["id"])) {
         $logged_in = true;
+
+        if ($user["permission_level"] > 0) {
+            $is_admin = true;
+        }
     }
 }
 
@@ -39,6 +44,8 @@ if (!isset($project_details_result)) {
     header("Location: recruitments.php");
     exit;
 }
+
+// TODO: Sprawdź czy użytkownik jest już zgłoszony
 
 ?>
 
@@ -103,6 +110,29 @@ if (!isset($project_details_result)) {
                 <p>
                     <?php echo nl2br($project_details_result["description"]) ?>
                 </p>
+            </div>
+
+            <div class="actions 
+                    <?php if (!$logged_in): ?>
+                        logged_out
+                    <?php endif; ?>">
+
+                <?php if ($logged_in): ?>
+
+                    <?php if ($is_admin): ?>
+                        <a href="admin/edit.php?id=<?= $project_details_result["id"] ?>" class="button">Edytuj</a>
+                    <?php else: ?>
+                        <?php if ($project_details_result["entries_count"] < $project_details_result["entries_limit"]): ?>
+                            <a href="recruit.php?id=<?= $recruitment_id ?>&type=recruitment" class="button">Rekrutuj</a>
+                            <a href="recruit.php?id=<?= $recruitment_id ?>&type=practice" class="button">Zgłoś się na staż</a>
+                        <?php endif; ?>
+                    <?php endif; ?>
+
+
+
+                <?php else: ?>
+                    <a href="login.php" class="button">Zaloguj się, aby zgłosić</a>
+                <?php endif; ?>
             </div>
         </div>
     </div>
